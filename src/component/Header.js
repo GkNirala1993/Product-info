@@ -9,13 +9,21 @@ const Header = () => {
   };
 
   const handleHome = () => {
-    history.push("/")
-  }
+    history.push("/");
+  };
+
+  const handleLogin = () => {
+      history.push("/login");
+  };
+
+  const handleRegister = () => {
+    history.push("/register");
+  };
 
   return (
     <div className="text-center">
       <nav className="navbar navbar-expand-lg navbar-light bg-primary">
-        <div className="container w-75 d-flex justify-content-around">
+        <div className="container-fluid mx-5">
           <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"></img>
           <button
             className="navbar-toggler"
@@ -31,7 +39,11 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link text-white" aria-current="page" onClick={handleHome}>
+                <a
+                  className="nav-link text-white"
+                  aria-current="page"
+                  onClick={handleHome}
+                >
                   Home
                 </a>
               </li>
@@ -50,14 +62,17 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          <div className="d-flex justify-content-end">
+            <input
+              className="form-control"
+              type="search"
+              placeholder="Search for products, brands and more"
+              aria-label="Search"
+            ></input>
+            <button className="btn text-white mx-2" onClick={handleLogin}>Login</button>
+            <button className="btn text-white mx-2" onClick={handleRegister}>Register</button>
 
-          <input
-            className="form-control w-50 d-flex justify-content-end"
-            type="search"
-            placeholder="Search for products, brands and more"
-            aria-label="Search"
-          ></input>
-          
+          </div>
         </div>
       </nav>
     </div>
