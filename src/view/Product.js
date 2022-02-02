@@ -3,28 +3,28 @@ import axios from "axios";
 import Header from "../component/Header";
 
 const Product = () => {
-  const [Product, setproduct] = useState([]);
+  const [product, setProduct] = useState([]);
 
   useEffect(() => {
     axios
       .get("https://fakestoreapi.com/products")
       .then((res) => {
-        setproduct(res.data);
+        setProduct(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-  console.log(Product);
+  console.log(product);
   return (
-    <div>
+    <div className="">
       <Header />
       <h6 className="text-center my-3">All Product</h6>
       <div className="container">
         <div className="row d-flex justify-content-center">
-          {Product.map((data, array) => {
+          {product.map((data, index) => {
             return (
-              <div className="col-sm-6 col-md-4 col-lg-4 mb-5" key={array}>
+              <div className="col-sm-6 col-md-4 col-lg-4 mb-5" key={index}>
                 <div className="card">
                   <div className="card-body">
                     <img className="mt-3" src={data.image} />

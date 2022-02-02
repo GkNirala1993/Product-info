@@ -60,7 +60,11 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#" onClick={handleLogin}>
+                <a
+                  className="nav-link text-white"
+                  href="#"
+                  onClick={handleLogin}
+                >
                   User
                 </a>
               </li>
@@ -84,7 +88,6 @@ const Header = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                {" "}
                 <img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"></img>
               </div>
               <ul
@@ -97,7 +100,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#" onClick={handleRegister}>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleRegister}
+                  >
                     Sign Up
                   </a>
                 </li>
