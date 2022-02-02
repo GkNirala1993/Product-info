@@ -4,6 +4,7 @@ import Home from "./view/Home";
 import Product from "./view/Product";
 import Login from "./view/Login";
 import Register from "./view/Register";
+import User from "./view/User";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/product" component={Product} />
         <Route exact path="/Login" component={Login} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/user" component={User} />
         
       
       </div>

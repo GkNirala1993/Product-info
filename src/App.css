@@ -14,3 +14,12 @@
   width: 100%;
   height: 400px;
 }
+.user-container img{
+  height: 50px;
+  width: 50px;
+}
+
+.custom-dropdown{
+  right: unset !important;
+  left: 0;
+}

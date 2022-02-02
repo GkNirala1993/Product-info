@@ -29,7 +29,7 @@ const Login = () => {
         .then(res=>{
             console.log(res.data)
             window.localStorage.setItem("jwtToken", res.data.token)
-            history.push("/");
+            history.push("/user");
     })
   }
 }
