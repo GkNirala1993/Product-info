@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../component/Header";
 import { useHistory } from "react-router-dom";
 import CustomModal from "../component/CustomModal";
+import Footer from "./Footer";
 
 const User = () => {
   const [userList, setUserList] = useState([]);
@@ -43,7 +44,6 @@ const User = () => {
   return (
     <div>
       <Header />
-      <h6 className="text-center my-5">Welcome to my User page</h6>
       <div className="container">
         <div
           className="d-flex justify-content-end my-2"
@@ -71,6 +71,7 @@ const User = () => {
         
         {showModal ? <CustomModal handleModalClose={handleModalClose} /> : ""}
       </div>
+      <Footer/>
     </div>
   );
 };

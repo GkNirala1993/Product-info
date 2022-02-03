@@ -56,7 +56,7 @@ const Login = () => {
         <div className="d-flex justify-content-between">
           <div>
             <button className="btn btn-light" onClick={handleLogin}>
-              Sign In
+              Log In
             </button>
           </div>
           <button className="btn btn-light" onClick={handleHome}>Back to home</button> 
