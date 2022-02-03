@@ -4,12 +4,15 @@ import Header from "../component/Header";
 
 const Product = () => {
   const [product, setProduct] = useState([]);
+  const [spinner, setSpinner] = useState(false);
 
   useEffect(() => {
+    setSpinner(true);
     axios
       .get("https://fakestoreapi.com/products")
       .then((res) => {
         setProduct(res.data);
+        setSpinner(false);
       })
       .catch((err) => {
         console.log(err);
@@ -20,7 +23,11 @@ const Product = () => {
     <div className="">
       <Header />
       <h6 className="text-center my-3">All Product</h6>
+    
       <div className="container">
+        {
+          spinner?<div className="text-center">Loading...</div>:
+        
         <div className="row d-flex justify-content-center">
           {product.map((data, index) => {
             return (
@@ -35,8 +42,9 @@ const Product = () => {
               </div>
             );
           })}
-        </div>
+        </div>}
       </div>
+      {/* </div> */}
     </div>
   );
 };

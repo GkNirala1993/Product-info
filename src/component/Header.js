@@ -29,6 +29,10 @@ const Header = () => {
     history.push("/User");
   };
 
+  const handleHelp = () => {
+    history.push("/help")
+  };
+
   const token = window.localStorage.getItem("jwtToken");
 
   return (
@@ -82,7 +86,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" id="nav-link">
+                <a className="nav-link text-white" id="nav-link" onClick={handleHelp}>
                   Help
                 </a>
               </li>
