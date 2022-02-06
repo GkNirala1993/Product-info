@@ -27,7 +27,49 @@
   cursor: pointer;
   background-color: yellow;
 }
-
-
-
-
+.helpdesk{
+background-color: whitesmoke;
+}
+.font{
+  font-size: 12px;
+}
+#card-list{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.gulshan{
+  font-size: 15px;
+}
+.ul{
+  list-style: none;
+  line-height: 50px;
+}
+.col-sm-3{
+  height: 500px;
+  overflow-y: auto;
+}
+.ul li:hover{
+  background-color: lightgray;
+}
+#card-img-top{
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  margin-top: 65px;
+}
+#btn{
+  background-color: rgb(214, 112, 16);
+  color: white;
+  width: 150px;
+  margin-left: 375px;
+  margin-bottom: 20px;
+}
+.title{
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.postal{
+  text-decoration: none;
+}

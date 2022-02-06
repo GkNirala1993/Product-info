@@ -33,6 +33,10 @@ const Header = () => {
     history.push("/help")
   };
 
+  const handleAbout = () => {
+    history.push("/About")
+  };
+
   const token = window.localStorage.getItem("jwtToken");
 
   return (
